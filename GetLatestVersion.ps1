@@ -11,11 +11,6 @@ $TFGetArgs = @("get", "/overwrite")
 $Current = Get-Location
 Set-Location C:\AzureDevOpsWorkspaces\DocGenAssets_Integration
 & $TFPath $TFGetArgs
-Set-Location C:\AzureDevOpsWorkspaces\Applications\Agdf\CommercialOffers_Integration
-& $TFPath $TFGetArgs
-Set-Location C:\AzureDevOpsWorkspaces\Applications\Agdf\InsuranceCompanies_Integration
-& $TFPath $TFGetArgs
-Set-Location $Current
 Set-Location $BranchDirectory
 & $TFPath $TFGetArgs
 Set-Location $Current

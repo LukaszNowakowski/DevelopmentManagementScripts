@@ -3,7 +3,8 @@
 	[switch]$NoDriveAttach,
 	[switch]$NoGetLatest,
 	[switch]$NoDatabaseDeploy,
-	[switch]$NoVisualStudio
+	[switch]$NoVisualStudio,
+	[switch]$NoApplications
 )
 
 If (!$NoDriveAttach) {
@@ -19,6 +20,13 @@ If (!$NoGetLatest) {
 If (!$NoDatabaseDeploy) {
 	Write-Host "Deploying databases"
 	./DeployDatabases.ps1 $BranchDirectory
+}
+
+If (!$NoApplications) {
+	Write-Host "Publishing applications"
+	./GetLatestApplicationsVersions.ps1
+	./BuildApplications.ps1
+	./DeployApplicationsDatabases.ps1
 }
 
 If (!$NoVisualStudio) {
