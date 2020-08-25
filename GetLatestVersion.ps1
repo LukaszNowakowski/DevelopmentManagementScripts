@@ -10,7 +10,9 @@ $TFGetArgs = @("get", "/overwrite")
 
 $Current = Get-Location
 Set-Location C:\AzureDevOpsWorkspaces\DocGenAssets_Integration
+Write-Host "DocGen assets"
 & $TFPath $TFGetArgs
 Set-Location $BranchDirectory
+Write-Host "Darwin"
 & $TFPath $TFGetArgs
 Set-Location $Current
