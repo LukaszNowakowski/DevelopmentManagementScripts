@@ -4,7 +4,7 @@ function DeployDatabase
 		$databaseDeployScript
 	)
 
-	$databaseDeployScript
+    start powershell $databaseDeployScript
 }
 
 DeployDatabase "C:\AzureDevOpsWorkspaces\Applications\Integration\Agdf_CommercialOffers\BuildUtils\database_deploy.ps1"
