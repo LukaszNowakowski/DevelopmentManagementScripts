@@ -18,7 +18,7 @@ function CreateWebApplication {
 
 CreateWebApplication Leonardo_Integration Agdf.Api.CommercialOffers C:\AzureDevOpsWorkspaces\Applications\Integration\Agdf_CommercialOffers\Agdf.Api.CommercialOffers axa
 CreateWebApplication Leonardo_Integration Agdf.Api.Documents C:\AzureDevOpsWorkspaces\Applications\Integration\Agdf_Documents\Agdf.Api.Documents axa
-CreateWebApplication Leonardo_Integration AgdfInsuranceCompanies C:\AzureDevOpsWorkspaces\Applications\Integration\Agdf_InsuranceCompanies\Agdf.Api.InsuranceCompanies axa
+CreateWebApplication Leonardo_Integration Agdf.Api.InsuranceCompanies C:\AzureDevOpsWorkspaces\Applications\Integration\Agdf_InsuranceCompanies\Agdf.Api.InsuranceCompanies axa
 CreateWebApplication Leonardo_Integration Agdf.Api.ReferentialData C:\AzureDevOpsWorkspaces\Applications\Integration\Agdf_ReferentialData\Agdf.Api.ReferentialData axa
 CreateWebApplication Leonardo_Integration Agdf.Api.SecurityAudit C:\AzureDevOpsWorkspaces\Applications\Integration\Agdf_SecurityAudit\Agdf.Api.SecurityAudit axa
 CreateWebApplication Leonardo_Integration Agdf.Swagger C:\AzureDevOpsWorkspaces\Applications\Integration\Agdf_SwaggerUI\Agdf.Swagger axa
