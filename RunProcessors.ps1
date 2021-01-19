@@ -11,8 +11,7 @@ function StartProcessor {
 	$Directory = "C:\Runners\$RunnerName"
 	$app = "cmd"
 	$parameters = @("/C"; "cd $Directory && $Executable")
-	Write-Host $parameters
-	# Start-Process $app $parameters
+	Start-Process $app $parameters
 }
 
 function CreateCopy{
