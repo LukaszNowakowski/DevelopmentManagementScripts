@@ -1,4 +1,7 @@
 #requires -RunAsAdministrator
+param (
+	[String]$WebSite = "Leonardo_Integration"
+)
 
 Import-Module WebAdministration
 
@@ -16,11 +19,11 @@ function CreateWebApplication {
 	Write-Host "APP: $ApplicationName" -ForegroundColor "Yellow"
 }
 
-CreateWebApplication Leonardo_Integration Agdf.Api.CommercialOffers C:\AzureDevOpsWorkspaces\Applications\Integration\Agdf_CommercialOffers\Agdf.Api.CommercialOffers axa
-CreateWebApplication Leonardo_Integration Agdf.Api.Documents C:\AzureDevOpsWorkspaces\Applications\Integration\Agdf_Documents\Agdf.Api.Documents axa
-CreateWebApplication Leonardo_Integration Agdf.Api.InsuranceCompanies C:\AzureDevOpsWorkspaces\Applications\Integration\Agdf_InsuranceCompanies\Agdf.Api.InsuranceCompanies axa
-CreateWebApplication Leonardo_Integration Agdf.Api.ReferentialData C:\AzureDevOpsWorkspaces\Applications\Integration\Agdf_ReferentialData\Agdf.Api.ReferentialData axa
-CreateWebApplication Leonardo_Integration Agdf.Api.SecurityAudit C:\AzureDevOpsWorkspaces\Applications\Integration\Agdf_SecurityAudit\Agdf.Api.SecurityAudit axa
-CreateWebApplication Leonardo_Integration Agdf.Swagger C:\AzureDevOpsWorkspaces\Applications\Integration\Agdf_SwaggerUI\Agdf.Swagger axa
-CreateWebApplication Leonardo_Integration Agdf.Api.Configuration C:\AzureDevOpsWorkspaces\Git\Agdf.Api.Configuration\Agdf.Api.Configuration axa
-CreateWebApplication Leonardo_Integration Agdf.Api.Logging C:\AzureDevOpsWorkspaces\Git\Agdf.Api.Logging\Agdf.Api.Logging axa
+CreateWebApplication $WebSite Agdf.Api.CommercialOffers C:\AzureDevOpsWorkspaces\Applications\Integration\Agdf_CommercialOffers\Agdf.Api.CommercialOffers axa
+CreateWebApplication $WebSite Agdf.Api.Documents C:\AzureDevOpsWorkspaces\Applications\Integration\Agdf_Documents\Agdf.Api.Documents axa
+CreateWebApplication $WebSite Agdf.Api.InsuranceCompanies C:\AzureDevOpsWorkspaces\Applications\Integration\Agdf_InsuranceCompanies\Agdf.Api.InsuranceCompanies axa
+CreateWebApplication $WebSite Agdf.Api.ReferentialData C:\AzureDevOpsWorkspaces\Applications\Integration\Agdf_ReferentialData\Agdf.Api.ReferentialData axa
+CreateWebApplication $WebSite Agdf.Api.SecurityAudit C:\AzureDevOpsWorkspaces\Applications\Integration\Agdf_SecurityAudit\Agdf.Api.SecurityAudit axa
+CreateWebApplication $WebSite Agdf.Swagger C:\AzureDevOpsWorkspaces\Applications\Integration\Agdf_SwaggerUI\Agdf.Swagger axa
+CreateWebApplication $WebSite Agdf.Api.Configuration C:\AzureDevOpsWorkspaces\Git\Agdf.Api.Configuration\Agdf.Api.Configuration axa
+CreateWebApplication $WebSite Agdf.Api.Logging C:\AzureDevOpsWorkspaces\Git\Agdf.Api.Logging\Agdf.Api.Logging axa
