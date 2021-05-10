@@ -34,4 +34,4 @@ If (!$NoVisualStudio) {
 	./OpenVisualStudio.ps1 $BranchDirectory
 }
 
-./CreateFolders.ps1
+./CreateFolders.ps1 $BranchDirectory
